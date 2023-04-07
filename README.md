@@ -5,7 +5,7 @@ LilyPond source files for Chopin's Twelve Etudes, Opus 62.
 LilyPond version 2.24.1 or higher.  It is assumed that `lilypond` is in the PATH of your system.
 
 ## Producing PDFs or other outputs
-`cd` into your installation directory and type:
+You can find the latest release of the PDF and MIDI files [here](https://github.com/ksnortum/chopin-opus-62/releases/latest), otherwise `cd` into your installation directory and type:
 
         lilypond twelve-etudes-opus62-book.ly
 
