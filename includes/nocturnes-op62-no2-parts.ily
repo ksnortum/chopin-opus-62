@@ -684,7 +684,7 @@ nocturneTwoMusic = \score {
 }
 
 nocturneTwoMidi = \book {
-  \bookOutputName "etude-op62-no2"
+  \bookOutputName "nocturne-op62-no2"
   \score { 
     \keepWithTag midi
     <<
