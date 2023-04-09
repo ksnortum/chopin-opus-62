@@ -64,5 +64,10 @@
   \context {
     \Voice
     \remove "Dynamic_performer"
-  }    
+  }
+  \context {
+    \Score
+    midiMinimumVolume = #0.20
+    midiMaximumVolume = #0.99
+  }
 }
