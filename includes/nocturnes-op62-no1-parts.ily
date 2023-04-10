@@ -5,7 +5,7 @@
 
 %%% Positions and shapes %%%
 
-slurShapeA = \shape #'((-17 . -8) (-13 . -3) (-2 . 1) (0 . 0)) \etc
+slurShapeA = \shape #'((-16.75 . -8) (-13 . -3) (-2 . 1) (0 . 0)) \etc
 slurShapeB = \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.25)) \etc
 slurShapeC = \shape #'((0 . 0) (0 . 3) (0 . 3.25) (0 . 0)) \etc
 slurShapeD = \shape #'((0 . 0) (0 . 0.5) (0 . 1.5) (0 . 0)) \etc
@@ -69,7 +69,7 @@ rightHandUpper = \relative {
   <e fs cs'>1) |
   r2 \voiceOne b'8( as gs fs |
   ds'4\arpeggio cs8 b) b( as \grace { \moveStaffArpeggioA as\arpeggio } gs fs |
-  fs'4 fs \oneVoice <a, fs'> <e gs e'>8 <fs ds'> |
+  fs'4\arpeggio fs \oneVoice <a, fs'> <e gs e'>8 <fs ds'> |
   \voiceOne ds'8 cs e8. ds16  ds4\arpeggio cs8. b16 |
   b8 as gs fs) <fs ds'>4(\arpeggio cs'8 b |
   b8 as \tuplet 3/2 { as8 gs fs) } \grace { \once \hideNotes fs'4\arpeggio } 
@@ -236,7 +236,7 @@ rightHandLower = \relative {
   s1 * 2 |
   \voiceTwo
   ds'4\arpeggio ds e \grace { \once \hideNotes e8\arpeggio } e4 |
-  <ds a'>2 s |
+  <ds a'>2\arpeggio s |
   gs4. gs8 
     << 
       { 
@@ -403,7 +403,7 @@ leftHandUpper = \relative {
   \barNumberCheck 73
   s4. b2 s8 |
   s1 |
-  d4( c4 s8 b4 b8 |
+  d4( c4. b4 b8 |
   \oneVoice fs8) s8 s4 s2 |
   s1 * 2 |
   \voiceThree s8 b4 cs8 ds gs,4 s8 |
@@ -445,10 +445,10 @@ leftHandLower = \relative {
   ds,8( ds' fss ds)  gs,( ds' gs es) |
   ds,8( ds' fs ds)  ds,( ds' gs ds) |
   \oneVoice ds,8 as''4-> as8 \moveRestA as\rest as4 as8 |
-  \moveRestA as\rest as4 as8 \moveRestA as\rest as4 as8 |
+  \moveRestA as\rest as4 as8 \moveRestA as\rest b4 b8 |
   \moveRestA as\rest as4-> as8 \moveRestA as\rest as4 as8 |
-  \moveRestA as\rest as4 as8 \moveRestA as\rest as4 as8 |
-  \moveRestA as\rest as4 as8 \moveRestA as\rest as4 as8 |
+  \moveRestA as\rest as4 as8 \moveRestA as\rest b4 b8 |
+  \moveRestA as\rest as4 as8 \moveRestA as\rest b4 b8 |
     
   \barNumberCheck 25
   \moveRestA as\rest as4-> as8 \voiceFour <b, gs'>2 |
@@ -495,7 +495,7 @@ leftHandLower = \relative {
   
   \barNumberCheck 57
   af,8( <ef' af c>4 q8) r c,4( df8 |
-  ef8) <ef' af c>4\slurPositionsE ( q8 <ef g df'>8 ef4->) ef8\slurShapeC ( |
+  ef8) <ef' af c>4\slurPositionsE ( <f af c>8 <ef g df'>8 ef4->) ef8\slurShapeC ( |
   ef8 ef4-> f8 ef ef4-> ef8) |
   ef,8(\< bf' g' cf bf g ef'4)\! |
   ef,,8(\< af f' bf af f <df' af'>4)\! |
