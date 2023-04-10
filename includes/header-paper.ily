@@ -4,7 +4,7 @@
 #(set-global-staff-size 18)
 
 \header {
-  title = "Twelve Etudes"
+  title = "Two Nocturnes"
   composer = "Frédéric Chopin (1810-1849)"
   opus = "Opus 62"
   maintainer = "Knute Snortum"
