@@ -162,7 +162,7 @@ rightHandUpper = \relative {
   <cs, a'>8 <b gs'>) \oneVoice r4 r16 cs^( e ds s16 \voiceOne 
     e8.*1/3 \noBeam e'16. e32 |
   e4  fs16 e cs gs  gs4  fs16 e fs gs |
-  gs4. as16 gs <ds fs>4. <cs e>8 |
+  \grace { \once \hideNotes gs8\arpeggio } gs4. as16 gs <ds fs>4. <cs e>8 |
   <a c fs>4 <b es gs> a' <a, ds>16 cs'8 ds,16) |
   <gs, ds'~>4\arpeggio \voiceOne ds'16( \staffDown b \staffUp e fs  
     \oneVoice a gs cs b  e fs gs b |
@@ -203,7 +203,10 @@ rightHandLower = \relative {
   r16 <b ds>8 q16 r <cs ds>8 q16 r <b ds>8 <cs ds> <b ds> <cs ds>16 |
   r16 <b ds>8 <b cs> <a cs> <b cs>16 r <a cs>8 <b cs> <a cs> a16 |
   s4 s16 a8 s16 s4 s16 a8 s16 |
-  s1 |
+  s2. s8.
+  % This is an enharmonic tie from B-sharp in rightHandUpper to C-natural in
+  % the following measure.
+  \once \hideNotes bs16~ |
   
   \barNumberCheck 49
   c16 \staffDown \voiceOne <g c>8 q <a c> c16  a a8 a <a b> <a ds>16 |
@@ -228,7 +231,7 @@ rightHandLower = \relative {
   fs'2 s4 ds |
   e4 s2 fs16 e gs8 |
   <e gs>2  bs16 cs e ds  cs8.. b32 |
-  e2 s |
+  \grace { \once \hideNotes e8\arpeggio } e2 s |
   s2  e16 f c e  s4 |
   s4 ds8[ e16] s s2 |
   s1 |
@@ -435,7 +438,9 @@ dynamics = {
   \partial 4 s4^\sostenutoWhiteout
   s1 * 2 |
   s2..\< s8\! |
-  s1 * 4 |
+  s2. s4\> |
+  s4 s\! s2 |
+  s1 * 2 |
   s2 s8.\< s16\! s4 |
   
   \barNumberCheck 9
