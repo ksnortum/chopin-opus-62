@@ -140,7 +140,7 @@ rightHandUpper = \relative {
   gs4.( a8  b ds e cs |
   b2 fs~ |
   fs4. g8  a cs d b |
-  a2 e4.) fs8 |
+  a2 e4. fs8) |
   ds2~ ds8( es fs fss |
   gs4 cs, a'2 |
   b4 e, cs'2 |
@@ -603,7 +603,7 @@ pedal = {
   s8\sd s\su s\sd s\su s8.\sd s16\su s4 |
   s8\sd s\su s2. |
   s8\sd s\su s4 s8\sd s\su s4 |
-  s8\sd s\su s8.\sd s16\su s2 |
+  s4\sd s8.\su\sd s16\su s2 |
   s4\sd s8.\su\sd s16\su s2 |
   s1 |
   s4\sd s8.\su\sd s16\su s4..\sd s16\su |
@@ -623,7 +623,7 @@ pedal = {
   s4.\sd s8\su s2 |
   s4\sd s\su s4.\sd s8\su |
   s2.\sd s4\su |
-  s4\sd s\su s4.\sd s8\su |
+  s4.\sd s8\su s4.\sd s8\su |
   s1 * 3 |
   
   \barNumberCheck 73
