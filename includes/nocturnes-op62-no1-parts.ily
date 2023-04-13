@@ -104,12 +104,12 @@ rightHandUpper = \relative {
   \tempo 4 = 68
   as4) r \magnifyMusic 0.63 \scaleDurations 4/41 {
     \stemUp
-    b8 cs ds es fs  gs \ottava 1 as b cs ds  es fs gs as b  cs es ds cs b
+    b8( cs ds es fs  gs \ottava 1 as b cs ds  es fs gs as b  cs es ds cs b
     as gs fs es ds  cs b as gs \ottava 0 fs  es ds cs b as  gs fs es ds cs  b
   } |
   \tempo 4 = 74
   \stemNeutral
-  as2.-> \tuplet 3/2 { ds8( fs8. ds'16 } |
+  as2.->) \tuplet 3/2 { ds8( fs8. ds'16 } |
   ds2~ ds4 cs8 b~ |
   \voiceOne b8 as gs fs)  ds'4(\arpeggio cs8 b |
   b8 as \grace{ as\arpeggio } gs fs)  fs'4(\arpeggio fs |
@@ -736,17 +736,18 @@ pedal = {
   s4.\sd s8\su s4.\sd s8\su |
   
   \barNumberCheck 65
-  s8 s\sd s s\su s2 |
+  s8 s\sd s8. s16\su s2 |
   s2..\sd s8\su |
   % key change to b
   s2..\sd s8\su |
-  s8 s16.\sd \movePedalB s32\su \movePedalA s16.\sd \movePedalB s32\su 
-    \movePedalOff s8\sd s8.\su\sd s16\su \movePedalA s16.\sd \movePedalB s32\su
+  s16.\sd \movePedalB s32\su \movePedalA s16.\sd \movePedalB s32\su \movePedalOff
+  s16.\sd \movePedalB s32\su \movePedalA s16.\sd \movePedalB s32\su \movePedalOff
+  s8.\sd s16\su \movePedalA s16.\sd \movePedalB s32\su
     \movePedalOff s16.\sd \movePedalB s32\su |
   \movePedalA s16.\sd \movePedalB s32\su \movePedalOff s16.\sd \movePedalB 
     s32\su \movePedalA s16.\sd \movePedalB s32\su \movePedalOff s16.\sd 
     \movePedalB s32\su \movePedalOff s4.\sd s8\su |
-  s16.\sd \movePedalB s32\su \movePedalA s16.\sd \movePedalB s32\su 
+  s8.\sd \movePedalB s16\su
     \movePedalOff s16.\sd \movePedalB s32\su \movePedalA s16.\sd \movePedalB
     s32\su \movePedalOff s4...\sd s32\su |
   s4.\sd s8\su \movePedalA s16.\sd \movePedalB s32\su \movePedalOff s16.\sd
