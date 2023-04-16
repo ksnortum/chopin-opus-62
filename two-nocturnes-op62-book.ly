@@ -22,11 +22,6 @@
 
 % \pointAndClickOff % <-- uncomment me for smaller PDF size
 
-\paper {
-  ragged-right = ##f
-  ragged-last-bottom = ##f
-}
-
 \nocturneOneMusic
 \nocturneTwoMusic
 
